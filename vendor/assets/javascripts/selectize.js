@@ -1249,7 +1249,8 @@
 				}
 			});
 	
-			$window.on(['scroll' + eventNS, 'resize' + eventNS].join(' '), function() {
+			// $window.on(['scroll' + eventNS, 'resize' + eventNS].join(' '), function() {
+			$window.on('resize' + eventNS, function() {
 				if (self.isOpen) {
 					self.positionDropdown.apply(self, arguments);
 				}
